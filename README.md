@@ -15,7 +15,7 @@ Power piezo buzzer with +5V from PSU via NPN transistor. Significantly louder op
 Power piezo buzzer with +5V from PSU via optocoupler. Similar to previous option but with galvanic isolation from motherboard HDD LED output.
 * [MARK-03 (Breadboard)](#mark-03-breadboard)  
 Add multivibrator IC to adjust duration of pulses sent to piezo buzzer. Features more "clicky" and adjustable sound.
-* [MARK-04 (PCB)](#mark-04-pcb)  
+* [MARK-03 (PCB)](#mark-03-pcb)  
 PCB version of previous option.
 
 Showcase of different versions available on [YouTube](https://youtu.be/AeMDvgbilyM).
