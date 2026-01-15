@@ -138,7 +138,62 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=144s) (tim
 
 MARK-03 (Breadboard)
 --------------------
+![HDD¢ — MARK-03](/assets/images/hddc_github-readme_mark-03_photo-01.jpg)
+
+During periods of high disk activity (when the hard drive access rate is high, such as when running disk speed tests or loading a video game level), piezo buzzer can produce a fairly high-pitched sound, quite unlike that of a real hard drive. To mitigate this effect and make sound more "clicky" rather than "whiny", we should reduce the frequency of activity signal sent to the piezo. This can be achieved using a monostable multivibrator, an integrated circuit that generates pulses of a desired duration in response to a change in the input signal. This way we can limit the maximum frequency at which the buzzer will sound, while still maintaining the "clicking" sound (and being able to adjust it to some extent to our liking).
+
 Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=214s) (timestamp: 03:34).
+
+<details>
+<summary>Click here to view details</summary>
+
+### Breadboard
+![HDD¢ — MARK-03 Breadboard](/assets/images/hddc_github-readme_mark-03_bb-01.jpg)
+
+Turn POT1 (100K) potentiometer to adjust the pulse duration sent to piezo buzzer. Alternatively, use a fixed-value resistor to achieve desired sound. Start by adding a resistor (or several in series) with a value of approximately 50K. Together with resistor R4 (43K) and capacitor C2 (100nF) they form a circuit that adjusts duration of pulses that multivibrator generates (in response to the signal from HDD activity LED output of the motherboard).
+
+Pulse duration is calculated using the formula:  
+```math
+t = 2.48 * (POT1 + R4) * C2
+```
+
+In the case of setting POT1 to 50K we get:
+```math
+t = 2.48 * (50K + 43K) * 100nF = 2.48 * 93 * 10^3 * 10^{-7} = 0.023s = 23ms
+```
+
+This means that there will be an interval of at least 23ms between successive "clicks" emitted by the piezo buzzer (that is, the click frequency will not exceed ~43Hz).
+
+To learn more about CD4047 and its operating modes, check out this [article](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes).
+
+### Schematic
+![HDD¢ — MARK-03 Schematic](/assets/images/hddc_github-readme_mark-03_schematic-01.jpg)
+
+### Components
+
+| Place          | Component                                    | Links/Notes            |
+|----------------|----------------------------------------------|------------------------|
+| BZ1            | HPM14A piezo buzzer (or equivalent)          | [Datasheet](/assets/files/HPM14A.pdf) |
+| C1, C2         | 100nf ceramic capacitor                      | Optional               |
+| R1, R2         | 220 resistor                                 |                        |
+| R3             | 10K resistor                                 |                        |
+| R4             | 43K resistor                                 |                        |
+| POT1           | 100K potentiometer                           | Use to adjust sound    |
+| D1             | LED                                          | Optional, if not used - place jumper wire in its place |
+| U1             | 4N35 optocoupler (or equivalent)             | [Datasheet](/assets/files/4N35.pdf) |
+| U2             | CD4047 multivibrator                         | [Datasheet](/assets/files/CD4047B.pdf), [Specs](https://components101.com/ics/cd4047-multivibrator-ic-pinout-datasheet-circuit-specification), [Usage tips](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes) |
+| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
+| J3             | Male pin headers, 1x4                        | Connect to +5V and GND coming from PSU |
+| JP1            | Male pin headers, 1x2 with Jumper cap        | Optional, can be used to turn device on/off (as an idea: can be hooked to the Turbo button) |
+| -              | Half-size solderless prototype breadboard    |                        |
+| -              | Jumper wires                                 |                        |
+
+### Files
+* Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/fritzing/HDD-Clicker-Mark-03.fzz)
+* Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/kicad/HDD-Clicker-Mark-03.zip)
+* [Hires exports](/mark-03/export)
+
+</details>
 
 MARK-03 (PCB)
 -------------
