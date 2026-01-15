@@ -44,9 +44,9 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 
 | Place          | Component                                    | Links/Notes            |
 |----------------|----------------------------------------------|------------------------|
-| BZ1            | Piezo buzzer                                 |                        |
+| BZ1            | HPM14A piezo buzzer (or equivalent)          |                        |
 | C1             | 100nf ceramic capacitor                      | Optional               |
-| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to case LED (if present) |
+| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | -              | SYB-170 mini solderless prototype breadboard |                        |
 | -              | Jumper wires                                 |                        |
 
@@ -78,13 +78,13 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=76s) (time
 
 | Place          | Component                                    | Links/Notes            |
 |----------------|----------------------------------------------|------------------------|
-| BZ1            | Piezo buzzer                                 |                        |
+| BZ1            | HPM14A piezo buzzer (or equivalent)          |                        |
 | C1             | 100nf ceramic capacitor                      | Optional               |
 | R1             | 15K resistor                                 |                        |
 | R2             | 220 resistor                                 |                        |
 | D1             | LED                                          | Optional, if not used - place jumper wire in its place |
 | Q1             | 2N3904 NPN BJT transistor (or equivalent)    |                        |
-| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to case LED (if present) |
+| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | J3             | Male pin headers, 1x4                        | Connect to +5V coming from PSU (only one pin of the header is actually connected to +5V) |
 | -              | SYB-170 mini solderless prototype breadboard |                        |
 | -              | Jumper wires                                 |                        |
