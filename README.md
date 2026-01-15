@@ -25,7 +25,37 @@ Showcase of different versions available on [YouTube](https://youtu.be/AeMDvgbil
 
 MARK-00
 -------
+![HDD¢ — MARK-00](/assets/images/hddc_github-readme_mark-00_photo-01.jpg)
+
+The simplest (but also the quietest) version, that requires direct connection of piezo buzzer to HDD activity LED output of motherboard.
+
 Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (timestamp: 00:06).
+
+<details>
+<summary>Click here to view details</summary>
+
+### Breadboard
+![HDD¢ — MARK-00 Breadboard](/assets/images/hddc_github-readme_mark-00_bb-01.jpg)
+
+### Schematic
+![HDD¢ — MARK-00 Schematic](/assets/images/hddc_github-readme_mark-00_schematic-01.jpg)
+
+### Components
+
+| Place          | Component                                    | Links/Notes            |
+|----------------|----------------------------------------------|------------------------|
+| BZ1            | Piezo buzzer                                 |                        |
+| C1             | 100nf ceramic capacitor                      | Optional               |
+| J1, J2         | Male pin headers, 1x2       			        | Connect J1 (IN) to M/B, J2 (OUT) to piezo |
+| -              | SYB-170 mini solderless prototype breadboard |                        |
+| -              | Jumper wires                                 |                        |
+
+### Files
+* Breadboard: [Fritzing](/mark-00/fritzing/HDD-Clicker-Mark-00.fzz)
+* Schematic: [KiCad](/mark-00/kicad/HDD-Clicker-Mark-00.zip)
+* [Hires exports](/mark-00/export)
+
+</details>
 
 MARK-01
 -------
