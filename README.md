@@ -51,8 +51,8 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 | -              | Jumper wires                                 |                        |
 
 ### Files
-* Breadboard: [Fritzing](/raw/refs/heads/master/mark-00/fritzing/HDD-Clicker-Mark-00.fzz)
-* Schematic: [KiCad](/raw/refs/heads/master/mark-00/kicad/HDD-Clicker-Mark-00.zip)
+* Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-00/fritzing/HDD-Clicker-Mark-00.fzz)
+* Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-00/kicad/HDD-Clicker-Mark-00.zip)
 * [Hires exports](/mark-00/export)
 
 </details>
