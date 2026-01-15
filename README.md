@@ -1,4 +1,7 @@
 # HDD¢ — Poor Man's HDD Clicker
+
+![HDD¢ — Poor Man's HDD Clicker](/assets/images/hddc_github-readme_cover-01.jpg)
+
 Reproduce hard drive activity noise based on activity of an HDD LED header on the motherboard.
 
 Perfect for retro enthusiasts who build their rig with convenience of a flash storage but miss sounds of an actual hard disk drive.
