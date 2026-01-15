@@ -27,7 +27,7 @@ MARK-00
 -------
 ![HDD¢ — MARK-00](/assets/images/hddc_github-readme_mark-00_photo-01.jpg)
 
-The simplest (but also the quietest) version, that requires direct connection of piezo buzzer to HDD activity LED output of motherboard.
+The simplest (but also the quietest) version, that requires direct connection of piezo buzzer to the HDD activity LED output of motherboard.
 
 Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (timestamp: 00:06).
 
@@ -46,7 +46,7 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 |----------------|----------------------------------------------|------------------------|
 | BZ1            | Piezo buzzer                                 |                        |
 | C1             | 100nf ceramic capacitor                      | Optional               |
-| J1, J2         | Male pin headers, 1x2       			        | Connect J1 (IN) to M/B, J2 (OUT) to piezo |
+| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to case LED (if present) |
 | -              | SYB-170 mini solderless prototype breadboard |                        |
 | -              | Jumper wires                                 |                        |
 
@@ -59,7 +59,42 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 
 MARK-01
 -------
+![HDD¢ — MARK-01](/assets/images/hddc_github-readme_mark-01_photo-01.jpg)
+
+A sure way to increase the volume is to power pizeo buzzer separately. We'll connect it to +5V power rail coming from the PSU (usually the red wire of a Molex or FDD power connector). For control, we'll use an NPN transistor connected to the HDD activity LED output of the motherboard.
+
 Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=76s) (timestamp: 01:16).
+
+<details>
+<summary>Click here to view details</summary>
+
+### Breadboard
+![HDD¢ — MARK-01 Breadboard](/assets/images/hddc_github-readme_mark-01_bb-01.jpg)
+
+### Schematic
+![HDD¢ — MARK-01 Schematic](/assets/images/hddc_github-readme_mark-01_schematic-01.jpg)
+
+### Components
+
+| Place          | Component                                    | Links/Notes            |
+|----------------|----------------------------------------------|------------------------|
+| BZ1            | Piezo buzzer                                 |                        |
+| C1             | 100nf ceramic capacitor                      | Optional               |
+| R1             | 15K resistor                                 |                        |
+| R2             | 220 resistor                                 |                        |
+| D1             | LED                                          | Optional, if not used - place jumper wire in its place |
+| Q1             | 2N3904 NPN BJT transistor (or equivalent)    |                        |
+| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to case LED (if present) |
+| J3             | Male pin headers, 1x4                        | Connect to +5V coming from PSU (only one pin of the header is actually connected to +5V) |
+| -              | SYB-170 mini solderless prototype breadboard |                        |
+| -              | Jumper wires                                 |                        |
+
+### Files
+* Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-01/fritzing/HDD-Clicker-Mark-01.fzz)
+* Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-01/kicad/HDD-Clicker-Mark-01.zip)
+* [Hires exports](/mark-01/export)
+
+</details>
 
 MARK-02
 -------
