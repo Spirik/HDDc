@@ -74,6 +74,8 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=76s) (time
 ### Schematic
 ![HDD¢ — MARK-01 Schematic](/assets/images/hddc_github-readme_mark-01_schematic-01.jpg)
 
+Notice, that we don't connect our circuit to the GND of the PSU explicitly. That's intentional. Output of the HDD activity LED header is usually driven with some kind of transistor internally, and depending on the motherboard that transistor can be placed either on `-` or `+` line of the connection (completing the circuit once it's active and making LED light up). If it is placed on `-` that will make it normally disconnected from the ground plane - and our hypothetical connection to the GND of the PSU would make it permanently connected making LED always shine (and piezo buzzer silent - since it produces sound only when switching is happening, not when constant power is applied).
+
 ### Components
 
 | Place          | Component                                    | Links/Notes            |
@@ -98,7 +100,41 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=76s) (time
 
 MARK-02
 -------
+![HDD¢ — MARK-02](/assets/images/hddc_github-readme_mark-02_photo-01.jpg)
+
+MARK-01 wasn't connected to the GND of the PSU explicitly, so we only used +5V rail (and ground connection came from the `-` of the HDD activity LED header of the motherboard once it's active). A more correct way to implement the buzzer connection to the motherboard is to achieve galvanic isolation (of buzzer circuit from the motherboard). This is usually accomplished using an optocoupler.
+
 Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=144s) (timestamp: 02:24).
+
+<details>
+<summary>Click here to view details</summary>
+
+### Breadboard
+![HDD¢ — MARK-02 Breadboard](/assets/images/hddc_github-readme_mark-02_bb-01.jpg)
+
+### Schematic
+![HDD¢ — MARK-02 Schematic](/assets/images/hddc_github-readme_mark-02_schematic-01.jpg)
+
+### Components
+
+| Place          | Component                                    | Links/Notes            |
+|----------------|----------------------------------------------|------------------------|
+| BZ1            | HPM14A piezo buzzer (or equivalent)          |                        |
+| C1             | 100nf ceramic capacitor                      | Optional               |
+| R1, R2         | 220 resistor                                 |                        |
+| D1             | LED                                          | Optional, if not used - place jumper wire in its place |
+| U1             | 4N35 optocoupler (or equivalent)             |                        |
+| J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
+| J3             | Male pin headers, 1x4                        | Connect to +5V and GND coming from PSU |
+| -              | SYB-170 mini solderless prototype breadboard |                        |
+| -              | Jumper wires                                 |                        |
+
+### Files
+* Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-02/fritzing/HDD-Clicker-Mark-02.fzz)
+* Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-02/kicad/HDD-Clicker-Mark-02.zip)
+* [Hires exports](/mark-02/export)
+
+</details>
 
 MARK-03 (Breadboard)
 --------------------
