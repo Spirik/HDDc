@@ -44,7 +44,7 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 
 | Place          | Component                                    | Links/Notes            |
 |----------------|----------------------------------------------|------------------------|
-| BZ1            | HPM14A piezo buzzer (or equivalent)          |                        |
+| BZ1            | HPM14A piezo buzzer (or equivalent)          | [Datasheet](/assets/files/HPM14A.pdf) |
 | C1             | 100nf ceramic capacitor                      | Optional               |
 | J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | -              | SYB-170 mini solderless prototype breadboard |                        |
@@ -80,12 +80,12 @@ Notice, that we don't connect our circuit to the GND of the PSU explicitly. That
 
 | Place          | Component                                    | Links/Notes            |
 |----------------|----------------------------------------------|------------------------|
-| BZ1            | HPM14A piezo buzzer (or equivalent)          |                        |
+| BZ1            | HPM14A piezo buzzer (or equivalent)          | [Datasheet](/assets/files/HPM14A.pdf) |
 | C1             | 100nf ceramic capacitor                      | Optional               |
 | R1             | 15K resistor                                 |                        |
 | R2             | 220 resistor                                 |                        |
 | D1             | LED                                          | Optional, if not used - place jumper wire in its place |
-| Q1             | 2N3904 NPN BJT transistor (or equivalent)    |                        |
+| Q1             | 2N3904 NPN BJT transistor (or equivalent)    | [Datasheet](/assets/files/2N3904.pdf) |
 | J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | J3             | Male pin headers, 1x4                        | Connect to +5V coming from PSU (only one pin of the header is actually connected to +5V) |
 | -              | SYB-170 mini solderless prototype breadboard |                        |
@@ -119,11 +119,11 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=144s) (tim
 
 | Place          | Component                                    | Links/Notes            |
 |----------------|----------------------------------------------|------------------------|
-| BZ1            | HPM14A piezo buzzer (or equivalent)          |                        |
+| BZ1            | HPM14A piezo buzzer (or equivalent)          | [Datasheet](/assets/files/HPM14A.pdf) |
 | C1             | 100nf ceramic capacitor                      | Optional               |
 | R1, R2         | 220 resistor                                 |                        |
 | D1             | LED                                          | Optional, if not used - place jumper wire in its place |
-| U1             | 4N35 optocoupler (or equivalent)             |                        |
+| U1             | 4N35 optocoupler (or equivalent)             | [Datasheet](/assets/files/4N35.pdf) |
 | J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | J3             | Male pin headers, 1x4                        | Connect to +5V and GND coming from PSU |
 | -              | SYB-170 mini solderless prototype breadboard |                        |
