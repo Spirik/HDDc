@@ -221,6 +221,11 @@ Watch this [video segment](https://www.youtube.com/watch?v=AeMDvgbilyM&t=379s) (
 
 An enclosure to house the PCB is optional. The enclosure pictured is laser-cut from 1.3mm-thick acrylic and is mounted using a set of M2 nylon screws and standoffs of varying lengths.
 
+### Files
+* [GERBER](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/pcb/gerber/hddc_mark-03_rev.1.0.0_gerber.zip) (ZIP-archive)
+* [DIY fabrication](/mark-03/pcb/diy/export) (PDF, SVG, PNG, etc.)
+* [Hires renders](/mark-03/pcb/render)
+
 </details>
 
 Disclaimer and a License
