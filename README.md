@@ -226,6 +226,7 @@ An enclosure to house the PCB is optional. The enclosure pictured is laser-cut f
 * [GERBER](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/pcb/gerber/hddc_mark-03_rev.1.0.0_gerber.zip) (ZIP-archive)
 * [DIY fabrication](/mark-03/pcb/diy) (PDF, SVG, PNG, etc.)
 * [Hires renders](/mark-03/pcb/render)
+* [Enclosure](/mark-03/pcb/enclosure) (SVG, PNG, etc.)
 
 </details>
 
