@@ -212,7 +212,9 @@ Watch this [video segment](https://www.youtube.com/watch?v=AeMDvgbilyM&t=379s) (
 <summary>Click here to view details</summary>
 
 ### PCB
-![HDD¢ — MARK-03 PCB](/assets/images/hddc_github-readme_mark-03-pcb_photo-bare-01.jpg)
+![HDD¢ — MARK-03 PCB Photo](/assets/images/hddc_github-readme_mark-03-pcb_photo-bare-01.jpg)
+
+![HDD¢ — MARK-03 PCB Render](/assets/images/hddc_github-readme_mark-03-pcb_render-bare-01.jpg)
 
 ### Enclosure
 ![HDD¢ — MARK-03 PCB Enclosure](/assets/images/hddc_github-readme_mark-03-pcb_photo-enclosure-01.jpg)
