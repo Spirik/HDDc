@@ -200,7 +200,26 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 
 MARK-03 (PCB)
 -------------
+![HDD¢ — MARK-03 (PCB)](/assets/images/hddc_github-readme_mark-03-pcb_photo-assembled-01.jpg)
+
+PCB version of MARK-03. Fits the same components in a 41.9x41.9mm footprint with mounting holes (on the bottom edge of PCB) aligned with mounting holes of a typical 3.5" drive cage.
+
 Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=308s) (timestamp: 05:08).
+
+Watch this [video segment](https://www.youtube.com/watch?v=AeMDvgbilyM&t=379s) (timestamp: 06:19) to see a demonstration of real-time sound adjustment.
+
+<details>
+<summary>Click here to view details</summary>
+
+### PCB
+![HDD¢ — MARK-03 PCB](/assets/images/hddc_github-readme_mark-03-pcb_photo-bare-01.jpg)
+
+### Enclosure
+![HDD¢ — MARK-03 PCB Enclosure](/assets/images/hddc_github-readme_mark-03-pcb_photo-enclosure-01.jpg)
+
+An enclosure to house the PCB is optional. The enclosure pictured is laser-cut from 1.3mm-thick acrylic and is mounted using a set of M2 nylon screws and standoffs of varying lengths.
+
+</details>
 
 Disclaimer and a License
 ------------------------
