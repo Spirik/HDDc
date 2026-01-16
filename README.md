@@ -180,7 +180,7 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 | R1, R2         | 220 resistor                                 |                        |
 | R3             | 10K resistor                                 |                        |
 | R4             | 43K resistor                                 |                        |
-| POT1           | 100K potentiometer (3296W-1-104 or equivalent) | Use to adjust sound    |
+| POT1           | 100K potentiometer (3296W-1-104 or equivalent) | [Datasheet](/assets/files/3296W.pdf), use to adjust sound |
 | D1             | LED                                          | Optional, if not used - place jumper wire in its place |
 | U1             | 4N35 optocoupler (or equivalent)             | [Datasheet](/assets/files/4N35.pdf) |
 | U2             | CD4047 multivibrator                         | [Datasheet](/assets/files/CD4047B.pdf), [Overview](https://components101.com/ics/cd4047-multivibrator-ic-pinout-datasheet-circuit-specification), [Usage tips](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes) |
