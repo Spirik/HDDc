@@ -180,10 +180,10 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 | R1, R2         | 220 resistor                                 |                        |
 | R3             | 10K resistor                                 |                        |
 | R4             | 43K resistor                                 |                        |
-| POT1           | 100K potentiometer                           | Use to adjust sound    |
+| POT1           | 100K potentiometer (3296W-1-104 or equivalent) | Use to adjust sound    |
 | D1             | LED                                          | Optional, if not used - place jumper wire in its place |
 | U1             | 4N35 optocoupler (or equivalent)             | [Datasheet](/assets/files/4N35.pdf) |
-| U2             | CD4047 multivibrator                         | [Datasheet](/assets/files/CD4047B.pdf), [Specs](https://components101.com/ics/cd4047-multivibrator-ic-pinout-datasheet-circuit-specification), [Usage tips](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes) |
+| U2             | CD4047 multivibrator                         | [Datasheet](/assets/files/CD4047B.pdf), [Overview](https://components101.com/ics/cd4047-multivibrator-ic-pinout-datasheet-circuit-specification), [Usage tips](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes) |
 | J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | J3             | Male pin headers, 1x4                        | Connect to +5V and GND coming from PSU |
 | JP1            | Male pin headers, 1x2 with Jumper cap        | Optional, can be used as an on/off switch for the clicker (e.g. can be hooked to the Turbo button) |
