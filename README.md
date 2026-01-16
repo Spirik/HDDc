@@ -25,6 +25,7 @@ Showcase of different versions available on [YouTube](https://youtu.be/AeMDvgbil
 
 MARK-00
 -------
+
 ![HDD¢ — MARK-00](/assets/images/hddc_github-readme_mark-00_photo-01.jpg)
 
 The simplest (but also the quietest) version, that requires direct connection of piezo buzzer to the HDD activity LED output of motherboard.
@@ -35,9 +36,11 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 <summary>Click here to view details</summary>
 
 ### Breadboard
+
 ![HDD¢ — MARK-00 Breadboard](/assets/images/hddc_github-readme_mark-00_bb-01.jpg)
 
 ### Schematic
+
 ![HDD¢ — MARK-00 Schematic](/assets/images/hddc_github-readme_mark-00_schematic-01.jpg)
 
 ### Components
@@ -51,6 +54,7 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 | -              | Jumper wires                                 |                        |
 
 ### Files
+
 * Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-00/fritzing/HDD-Clicker-Mark-00.fzz)
 * Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-00/kicad/HDD-Clicker-Mark-00.zip)
 * [Hires exports](/mark-00/export)
@@ -59,6 +63,7 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=6s) (times
 
 MARK-01
 -------
+
 ![HDD¢ — MARK-01](/assets/images/hddc_github-readme_mark-01_photo-01.jpg)
 
 A sure way to increase the volume is to power pizeo buzzer separately. We'll connect it to +5V power rail coming from the PSU (usually the red wire of a Molex or FDD power connector). For control, we'll use an NPN transistor connected to the HDD activity LED output of the motherboard.
@@ -69,9 +74,11 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=76s) (time
 <summary>Click here to view details</summary>
 
 ### Breadboard
+
 ![HDD¢ — MARK-01 Breadboard](/assets/images/hddc_github-readme_mark-01_bb-01.jpg)
 
 ### Schematic
+
 ![HDD¢ — MARK-01 Schematic](/assets/images/hddc_github-readme_mark-01_schematic-01.jpg)
 
 Notice, that we don't connect our circuit to the GND of the PSU explicitly. That's intentional. Output of the HDD activity LED header is usually driven with some kind of transistor internally, and depending on the motherboard that transistor can be placed either on `-` or `+` line of the connection (completing the circuit once it's active and making LED light up). If it is placed on `-` that will make it normally disconnected from the ground plane - and our hypothetical connection to the GND of the PSU would make it permanently connected making LED always shine (and piezo buzzer silent - since it produces sound only when switching is happening, not when constant power is applied).
@@ -92,6 +99,7 @@ Notice, that we don't connect our circuit to the GND of the PSU explicitly. That
 | -              | Jumper wires                                 |                        |
 
 ### Files
+
 * Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-01/fritzing/HDD-Clicker-Mark-01.fzz)
 * Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-01/kicad/HDD-Clicker-Mark-01.zip)
 * [Hires exports](/mark-01/export)
@@ -100,6 +108,7 @@ Notice, that we don't connect our circuit to the GND of the PSU explicitly. That
 
 MARK-02
 -------
+
 ![HDD¢ — MARK-02](/assets/images/hddc_github-readme_mark-02_photo-01.jpg)
 
 MARK-01 wasn't connected to the GND of the PSU explicitly, so we only used +5V rail (and ground connection came from the `-` of the HDD activity LED header of the motherboard once it's active). A more correct way to implement the buzzer connection to the motherboard is to achieve galvanic isolation (of buzzer circuit from the motherboard). This is usually accomplished using an optocoupler.
@@ -110,9 +119,11 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=144s) (tim
 <summary>Click here to view details</summary>
 
 ### Breadboard
+
 ![HDD¢ — MARK-02 Breadboard](/assets/images/hddc_github-readme_mark-02_bb-01.jpg)
 
 ### Schematic
+
 ![HDD¢ — MARK-02 Schematic](/assets/images/hddc_github-readme_mark-02_schematic-01.jpg)
 
 ### Components
@@ -130,6 +141,7 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=144s) (tim
 | -              | Jumper wires                                 |                        |
 
 ### Files
+
 * Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-02/fritzing/HDD-Clicker-Mark-02.fzz)
 * Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-02/kicad/HDD-Clicker-Mark-02.zip)
 * [Hires exports](/mark-02/export)
@@ -138,6 +150,7 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=144s) (tim
 
 MARK-03 (Breadboard)
 --------------------
+
 ![HDD¢ — MARK-03](/assets/images/hddc_github-readme_mark-03_photo-01.jpg)
 
 During periods of high disk activity (when the hard drive access rate is high, such as when running disk speed tests or loading a video game level), piezo buzzer can produce a fairly high-pitched sound, quite unlike that of a real hard drive. To mitigate this effect and make sound more "clicky" rather than "whiny", we should reduce the frequency of activity signal sent to the piezo. This can be achieved using a monostable multivibrator, an integrated circuit that generates pulses of a desired duration in response to a change in the input signal. This way we can limit the maximum frequency at which the buzzer will sound, while still maintaining the "clicking" sound (and being able to adjust it to some extent to our liking).
@@ -148,9 +161,11 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=214s) (tim
 <summary>Click here to view details</summary>
 
 ### Breadboard
+
 ![HDD¢ — MARK-03 Breadboard](/assets/images/hddc_github-readme_mark-03_bb-01.jpg)
 
 ### Schematic
+
 ![HDD¢ — MARK-03 Schematic](/assets/images/hddc_github-readme_mark-03_schematic-01.jpg)
 
 Turn POT1 (100K) potentiometer to adjust the pulse duration sent to piezo buzzer. Alternatively, use a fixed-value resistor to achieve desired sound. Start by adding a resistor (or several in series) with a value of approximately 50K. Together with resistor R4 (43K) and capacitor C2 (100nF) they form a circuit that adjusts duration of pulses that multivibrator generates (in response to the signal from HDD activity LED output of the motherboard).
@@ -187,11 +202,12 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 | U2             | CD4047 multivibrator                         | [Datasheet](/assets/files/CD4047B.pdf), [Overview](https://components101.com/ics/cd4047-multivibrator-ic-pinout-datasheet-circuit-specification), [Usage tips](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes) |
 | J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | J3             | Male pin headers, 1x4                        | Connect to +5V and GND coming from PSU |
-| JP1            | Male pin headers, 1x2 with Jumper cap        | Optional, can be used as an on/off switch for the clicker (e.g. can be hooked to the Turbo button) |
+| JP1            | Male pin headers, 1x2 with Jumper cap        | Optional, can be used as an on/off switch for the clicker |
 | -              | Half-size solderless prototype breadboard    |                        |
 | -              | Jumper wires                                 |                        |
 
 ### Files
+
 * Breadboard: [Fritzing](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/fritzing/HDD-Clicker-Mark-03.fzz)
 * Schematic: [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/kicad/HDD-Clicker-Mark-03.zip)
 * [Hires exports](/mark-03/export)
@@ -200,6 +216,7 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 
 MARK-03 (PCB)
 -------------
+
 ![HDD¢ — MARK-03 (PCB)](/assets/images/hddc_github-readme_mark-03-pcb_photo-assembled-01.jpg)
 
 PCB version of MARK-03. Fits the same components in a 41.9x41.9mm footprint with mounting holes (on the bottom edge of PCB) aligned with mounting holes of a typical 3.5" drive cage.
@@ -212,23 +229,29 @@ Watch this [video segment](https://www.youtube.com/watch?v=AeMDvgbilyM&t=379s) (
 <summary>Click here to view details</summary>
 
 ### PCB
+
 ![HDD¢ — MARK-03 PCB Photo](/assets/images/hddc_github-readme_mark-03-pcb_photo-bare-01.jpg)
 
 ![HDD¢ — MARK-03 PCB Render](/assets/images/hddc_github-readme_mark-03-pcb_render-bare-01.jpg)
 
 ### Enclosure
+
 ![HDD¢ — MARK-03 PCB Enclosure](/assets/images/hddc_github-readme_mark-03-pcb_photo-enclosure-01.jpg)
 
 An enclosure to house the PCB is optional. The enclosure pictured is laser-cut from 1.3mm-thick acrylic and is mounted using a set of M2 nylon screws and standoffs of varying lengths.
 
-### Components
-The components used are identical to those used in the breadboard version of [MARK-03](#mark-03-breadboard). However, some usability improvements are possible. For example, it might be convenient to replace the straight pin headers with angled ones, or add an FDD power connector (it is commonly referred to as Berg or 171826-4 connector), as shown in the photos of assembled version above.
+### Components (and possible tweaks)
 
-Dedicated switch (or even Turbo button) can be connected to JP1 header to add more convenient way of turning clicker on or off.
+The components used are identical to those used in the breadboard version of [MARK-03](#mark-03-breadboard). However, some usability improvements are possible. For example, it might be convenient to replace the straight pin headers with angled ones, or add an FDD power connector (it is commonly referred to as Berg or 171826-4 connector), as shown in the photos of assembled version above.
 
 DIP sockets for 4N35 and CD4047 ICs can be installed, to avoid soldering these chips to PCB directly.
 
+Dedicated switch (or even Turbo button) can be connected to JP1 header to add more convenient way of turning clicker on or off.
+
+Volume and sound profile can be further adjusted by selecting a different model of piezo buzzer. Some can handle +12V (continuous or short-term). Both 4N35 and CD4047 chips can operate with +12V, so it should be possible to power MARK-03 with +12V instead of +5V (simply flip FDD power connector so that yellow wire connects in place of the red one). However, D1 LED may not like this, so higher value of an R2 resistor should be used (or remove the LED entirely and replace it with a jumper wire).
+
 ### Files
+
 * [KiCad](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/kicad/HDD-Clicker-Mark-03.zip)
 * [GERBER](https://github.com/Spirik/HDDc/raw/refs/heads/master/mark-03/pcb/gerber/hddc_mark-03_rev.1.0.0_gerber.zip) (ZIP-archive)
 * [DIY fabrication](/mark-03/pcb/diy) (PDF, SVG, PNG, etc.)
