@@ -150,11 +150,14 @@ Watch [Demo on YouTube](https://www.youtube.com/watch?v=AeMDvgbilyM&t=214s) (tim
 ### Breadboard
 ![HDD¢ — MARK-03 Breadboard](/assets/images/hddc_github-readme_mark-03_bb-01.jpg)
 
+### Schematic
+![HDD¢ — MARK-03 Schematic](/assets/images/hddc_github-readme_mark-03_schematic-01.jpg)
+
 Turn POT1 (100K) potentiometer to adjust the pulse duration sent to piezo buzzer. Alternatively, use a fixed-value resistor to achieve desired sound. Start by adding a resistor (or several in series) with a value of approximately 50K. Together with resistor R4 (43K) and capacitor C2 (100nF) they form a circuit that adjusts duration of pulses that multivibrator generates (in response to the signal from HDD activity LED output of the motherboard).
 
 Pulse duration is calculated using the formula:  
 ```math
-t = 2.48 * (POT1 + R4) * C2
+t = 2.48 * (POT_1 + R_4) * C_2
 ```
 
 In the case of setting POT1 to 50K we get:
@@ -164,10 +167,9 @@ t = 2.48 * (50K + 43K) * 100nF = 2.48 * 93 * 10^3 * 10^{-7} = 0.023s = 23ms
 
 This means that there will be an interval of at least 23ms between successive "clicks" emitted by the piezo buzzer (that is, the click frequency will not exceed ~43Hz).
 
-To learn more about CD4047 and its operating modes, check out this [article](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes).
+Watch this [video segment](https://www.youtube.com/watch?v=AeMDvgbilyM&t=283s) (timestamp: 04:43), which demonstrates the difference in sound at different values of the POT1 potentiometer.
 
-### Schematic
-![HDD¢ — MARK-03 Schematic](/assets/images/hddc_github-readme_mark-03_schematic-01.jpg)
+To learn more about CD4047 and its operating modes, check out this [article](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes).
 
 ### Components
 
@@ -184,7 +186,7 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 | U2             | CD4047 multivibrator                         | [Datasheet](/assets/files/CD4047B.pdf), [Specs](https://components101.com/ics/cd4047-multivibrator-ic-pinout-datasheet-circuit-specification), [Usage tips](https://circuitdigest.com/tutorial/cd4047-multifunctional-multivibrator-ic-circuit-simulation-working-modes) |
 | J1, J2         | Male pin headers, 1x2                        | Connect J1 (IN) to M/B, J2 (OUT) to chassis LED (if present) |
 | J3             | Male pin headers, 1x4                        | Connect to +5V and GND coming from PSU |
-| JP1            | Male pin headers, 1x2 with Jumper cap        | Optional, can be used to turn device on/off (as an idea: can be hooked to the Turbo button) |
+| JP1            | Male pin headers, 1x2 with Jumper cap        | Optional, can be used as an on/off switch for the clicker (e.g. can be hooked to the Turbo button) |
 | -              | Half-size solderless prototype breadboard    |                        |
 | -              | Jumper wires                                 |                        |
 
