@@ -10,15 +10,15 @@ Cheap and easy way. No soldering (unless you want to), no microcontrollers, no n
 
 This repository explores different implementation options for the device that can be built on the breadboard using inexpensive off-the-shelf components readily available from retailers.
 
-* [MARK-00](#mark-00)  
+* [**MARK-00**](#mark-00)  
 Connect piezo buzzer to HDD activity LED output of motherboard directly. The simplest but quietest option.
-* [MARK-01](#mark-01)  
+* [**MARK-01**](#mark-01)  
 Power piezo buzzer with +5V from PSU via NPN transistor. Significantly louder option.
-* [MARK-02](#mark-02)  
+* [**MARK-02**](#mark-02)  
 Power piezo buzzer with +5V from PSU via optocoupler. Similar to previous option but with galvanic isolation from motherboard HDD LED output.
-* [MARK-03 (Breadboard)](#mark-03-breadboard)  
+* [**MARK-03** (Breadboard)](#mark-03-breadboard)  
 Add multivibrator IC to adjust duration of pulses sent to piezo buzzer. Features more "clicky" and adjustable sound.
-* [MARK-03 (PCB)](#mark-03-pcb)  
+* [**MARK-03** (PCB)](#mark-03-pcb)  
 PCB version of previous option.
 
 Showcase of different versions available on [YouTube](https://youtu.be/AeMDvgbilyM).
