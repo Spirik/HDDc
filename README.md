@@ -176,7 +176,8 @@ To learn more about CD4047 and its operating modes, check out this [article](htt
 | Place          | Component                                    | Links/Notes            |
 |----------------|----------------------------------------------|------------------------|
 | BZ1            | HPM14A piezo buzzer (or equivalent)          | [Datasheet](/assets/files/HPM14A.pdf) |
-| C1, C2         | 100nf ceramic capacitor                      | Optional               |
+| C1             | 100nf ceramic capacitor                      | Optional               |
+| C2             | 100nf ceramic capacitor                      |                        |
 | R1, R2         | 220 resistor                                 |                        |
 | R3             | 10K resistor                                 |                        |
 | R4             | 43K resistor                                 |                        |
