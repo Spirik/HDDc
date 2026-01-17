@@ -15,7 +15,7 @@ Connect piezo buzzer to HDD activity LED output of motherboard directly. The sim
 * [**MARK-01**](#mark-01)  
 Power piezo buzzer with +5V from PSU via NPN transistor. Significantly louder option.
 * [**MARK-02**](#mark-02)  
-Power piezo buzzer with +5V from PSU via optocoupler. Similar to previous option but with galvanic isolation from motherboard HDD LED output.
+Power piezo buzzer with +5V from PSU via optocoupler. Similar to previous option but with galvanic isolation from motherboard HDD activity LED output.
 * [**MARK-03** (Breadboard)](#mark-03-breadboard)  
 Add multivibrator IC to adjust duration of pulses sent to piezo buzzer. Features more "clicky" and adjustable sound.
 * [**MARK-03** (PCB)](#mark-03-pcb)  
