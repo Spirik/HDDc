@@ -19,7 +19,7 @@ Power piezo buzzer with +5V from PSU via optocoupler. Similar to previous option
 * [**MARK-03** (Breadboard)](#mark-03-breadboard)  
 Add multivibrator IC to adjust duration of pulses sent to piezo buzzer. Features more "clicky" and adjustable sound.
 * [**MARK-03** (PCB)](#mark-03-pcb)  
-PCB version of previous option.
+PCB version of the previous option.
 
 Showcase of different versions available on [YouTube](https://youtu.be/AeMDvgbilyM).
 
@@ -238,7 +238,7 @@ Watch this [video segment](https://www.youtube.com/watch?v=AeMDvgbilyM&t=379s) (
 
 ![HDD¢ — MARK-03 PCB Enclosure](/assets/images/hddc_github-readme_mark-03-pcb_photo-enclosure-01.jpg)
 
-An enclosure to house the PCB is optional. The enclosure pictured is laser-cut from 1.3mm-thick acrylic and is mounted using a set of M2 nylon screws and standoffs of varying lengths.
+An enclosure to house the PCB is optional. The enclosure pictured is laser-cut from 1.3mm-thick acrylic and is assembled using a set of M2 nylon screws and standoffs of varying lengths.
 
 ### Components (and possible tweaks)
 
