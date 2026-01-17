@@ -265,7 +265,7 @@ Alternatives
 
 Other HDD clicker implementations by different authors are known to exist (usually sold as preassembled devices):
 
-* Serdashop's [HDD Clicker](https://www.serdashop.com/HDDClicker) (in cooperation with [Matze](https://www.retrokits.de/index.php/hdd-clicker-v0-2/), see [VOGON's thread](https://www.vogons.org/viewtopic.php?t=90047))
+* Serdashop's [HDD Clicker](https://www.serdashop.com/HDDClicker) (in cooperation with [Matze](https://www.retrokits.de/index.php/hdd-clicker-v0-2/), see [VOGONS thread](https://www.vogons.org/viewtopic.php?t=90047))
 * [HDD Clicker for Vintage PC computers](https://www.pcbway.com/project/shareproject/HDD_Clicker_Vintage_PC_computers_with_ATAPI_PATA_IDE_connector_5777ef2d.html) by Edoardo kinmami
 * [HDD Synth](https://www.vogons.org/viewtopic.php?t=90545) by MaverickUK
 * SMC's [Beleths Drum](https://tinkerdifferent.com/threads/smc-presents-beleths-drum-bluescsi-hdd-sound-emulator.1124/) for BlueSCSI
